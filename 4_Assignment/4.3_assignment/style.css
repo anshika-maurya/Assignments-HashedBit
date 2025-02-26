@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#myPara{
+    padding: .5rem;
+    width: 50%;
+    color: black;
+    text-align: center;
+    display: none;
+    
+}
+
+.btn{
+    background-color: #e84949;
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    font-weight: 700;
+    border-radius: .4rem;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 14rem;
+}
+

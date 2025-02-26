@@ -1,0 +1,17 @@
+:root {
+  --lm-bg: #f6f8ff;
+  --lm-bg-content: #fefefe;
+  --lm-text: #4b6a9b;
+ 
+}
+.btn {
+  display: flex;
+  letter-spacing: 2.5px;
+  width: 70px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: var(--lm-text);
+  cursor: pointer;
+}
+  

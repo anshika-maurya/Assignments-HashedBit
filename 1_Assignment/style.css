@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+   
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    text-align: center;
+    padding: 0.1rem;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .container{
+        position: relative;
+        overflow-y: auto;
+    }
+}
+
+
+.header_content{
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1280px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    gap: 0.625rem;
+}
+
+a .logo-icon{
+
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.logo-text{
+    font-size: 1.67rem;
+}
+
+.nav{
+    display: none;
+    gap: 1.5rem;
+
+}
+
+.nav-link{
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+.nav-link:hover{
+    color: #2563eb;
+}
+.contact-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #455a5d;
+    color: #ffffff;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-button:hover{
+    background-color: #5254f8;
+}
+
+.menu-button{
+    display: block;  
+    border: none;
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+   
+}
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    
+}
+
+@media screen and (min-width: 768px){
+    .header_content{
+        width: 67vw;
+    }
+    
+    .nav{
+        display: flex;
+        gap: 1.5rem;
+       
+    }
+    
+    .logo{
+      font-size: .8rem;    
+    }
+    .logo-icon{
+        height: 3.875rem;
+        width: 1.98rem;
+    
+    }
+    .logo-text{
+        font-size: 1.58rem;
+    }
+    .nav-link{
+        font-size: .9rem;   
+    }
+    .contact-button{
+        display: block;
+        padding: 0.6rem 1.2rem;
+        font-size: .83rem;   
+    }
+    .menu-button{
+        display: none;  
+    }
+    
+}
+
+.sidebar {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #2c3738; 
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 180px;
+    padding: 12px 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    text-decoration: none; 
+    background-color: #455a5d;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #5254f8; 
+    transform: scale(1.05);
+}
+
+.sidebar i {
+    margin-right: 10px; 
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    /* .sidebar a {
+        font-size: 14px;
+        padding: 10px;
+    } */
+}
+
+
+.main-content {
+    margin-left: 15rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 1;
+}
+@media (max-width: 768px) {
+    .main-content {
+        margin-left:0;
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #484d4e60;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.image{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 320px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card_desc{
+    color: #393838;
+    text-align: left;
+    padding: .5rem;
+    flex-grow: 1;
+    width: 80%;
+    
+}
+
+footer {
+    background: rgb(24, 23, 23);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.tourInfo{
+    margin: 20px 5px;
+}
+footer span{
+    color: #C850C0;
+    font-weight: bold;
+    
+}
+
+
